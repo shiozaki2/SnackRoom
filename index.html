@@ -13,18 +13,21 @@
     </script>
   </head>
   <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 1130px; height: 700px;"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">SnackRoom</div>
+    <div style="position: relative;">
+      <div class="webgl-content" style="bottom: 0px;">
+	<div id="gameContainer" style="width: 1130px; height: 700px;"></div>
+	<div class="footer">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+          <div class="title">SnackRoom</div>
+	</div>
       </div>
+      <!-- 1110 ↓↓-->
+      <div style="text-align: left; position: absolute; top: 720px;">
+	<h1>おやつ部屋の使い方</h1>
+      </div>
+      <!-- 1110 ↑↑-->
     </div>
-    <!-- 1110 ↓↓-->
-    <div style="text-align: left;">
-      <h1>おやつ部屋の使い方</h1>
-    </div>
-    <!-- 1110 ↑↑-->
+    
   </body>
 </html>
