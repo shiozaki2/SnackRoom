@@ -3,23 +3,40 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | SnackRoom2</title>
+    <title>Unity WebGL Player | SnackRoom</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/SnackRoom2.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/SnackRoom.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">SnackRoom2</div>
+    <div style="position: relative;">
+      <div class="webgl-content" style="bottom: 0px;">
+	<div id="gameContainer" style="width: 1050px; height: 650px;"></div>
+	<div class="footer">
+          <div class="webgl-logo"></div>
+          <!--<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>-->
+	  <div class="fullscreen"></div>
+          <div class="title">SnackRoom</div>
+	</div>
       </div>
+      <!-- 1110 ↓↓-->
+      <div>
+	<div style="position: absolute; top: 950px; width: 1050px; height: 500px; background-color: #faaaaa; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: left;">
+	  <h1>おやつ部屋の使い方</h1>
+	  <p style="font-size: 1.3rem;">
+	    ①おやつを選ぶ<br>
+	    ②指定された条件を選ぶ<br>
+	    ③アンケートに答える<br>
+	    ④名前を入力する
+	  </p>
+	</div>
+      </div>
+      <!-- 1110 ↑↑-->
     </div>
+    
   </body>
 </html>
